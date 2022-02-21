@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Practica3</title>
+  <ul>
+    <li onmouseover="mover(this)" onmouseout="mout(this)"><a href="https://www.youtube.com/watch?v=mPWSWoQAsIY&ab_channel=PaulinaPC">Video</a></li>
+    <li onmouseover="mover(this)" onmouseout="mout(this)"><a href="https://github.com/Paulinapc00/Practica3">Codigo Github</a></li>
+  </ul>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename= 'style.css')}}">
+</head>
+
+<body>
+<!-- partial:index.partial.html -->
+<style>
+  #image {
+    display: none;
+  }
+</style>
+<div>
+  <h1> Practica 3 </h1>
+  <h2> Instrucciones: Servidor web capaz de renderizar una pagina web con HTML, CSS y JS </h2>
+  <h3>
+    <a id="sebas" ><img id="image" src = "https://scontent.fmxl1-1.fna.fbcdn.net/v/t1.6435-9/84631485_2500961383341271_788725036868435968_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=174925&_nc_eui2=AeEjmAeJx7bd4U-pXm1bxiFyCmwARDmRqzQKbABEOZGrNOk_Mfogi7LK-4oygQIubvWipVEdjqxO8TkT1GJJeGTZ&_nc_ohc=_4-rP4BuymQAX-orYsf&_nc_ht=scontent.fmxl1-1.fna&oh=00_AT86cjmWd4bBHoih1xDFE4d8tHzLFnFxnDNNXlCsngv3og&oe=62385917" width="250" height="250">Sebastian Beltran Milan 31872 </a>
+    <a id="alfr"><img id="image2" src = "https://scontent.fmxl1-1.fna.fbcdn.net/v/t39.30808-6/211944323_135419015338537_747901510001655436_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=174925&_nc_eui2=AeGmiv5DW4VruNO6R5J5blt4BP0vy7SEKOgE_S_LtIQo6LifVEoFkB2bhFr46v3jKG3NP3G1OqnvtlO69UznV8L6&_nc_ohc=MLUAJ0AbLuwAX984iEb&_nc_ht=scontent.fmxl1-1.fna&oh=00_AT_UsB6hQ-MKYtMCBSVnNQp0Y1uM_gVvFjYIb9L1J6MMNw&oe=621732D1" width="250" height="250">Alfredo Angulo Vega 31878</a>
+    <a id="pau"><img id="image3" src = "https://scontent.fmxl1-1.fna.fbcdn.net/v/t1.6435-9/80536431_2428150477306785_6429164076122767360_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeG_ZoSDDDNGgQRJC7_SFMLUE3C36OpSW0gTcLfo6lJbSK1Qn0pMFtxHSNtMrogDhQ_DdKTbCiirJg4sHngQKkrh&_nc_ohc=hlGiXeQUpbQAX97cYRA&_nc_ht=scontent.fmxl1-1.fna&oh=00_AT8LkFLWSty6lQj0LiERS3_1lNdriqNSPG6u20o3kOrT8Q&oe=62377BD9" width="250" height="250">Paulina Parra Castro 36604</a>
+  </h3>
+  
+<button id="button1" 
+    onclick="show()" id="bID"> 
+    Sebastian Beltran 
+</button>
+<button id="button2" 
+    onclick="show2()" id="bID2"> 
+    Alfredo Angulo 
+</button>
+<button id="button3" 
+    onclick="show3()" id="bID3"> 
+    Paulina Parra
+</button>
+
+
+</div>
+<!-- partial -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script  src="{{url_for('static', filename= 'script.js')}}"></script>
+
+</body>
+</html>
